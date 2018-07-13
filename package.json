@@ -1,0 +1,15 @@
+{
+  "name": "fxreality-error-pages",
+  "version": "1.0.0",
+  "dependencies": {
+    "less": "^3.7.1"
+  },
+  "devDependencies": {
+    "less-watch-compiler": "^1.11.3"
+  },
+  "scripts": {
+    "watch": "less-watch-compiler html/less html/css styles.less",
+    "build": "less-watch-compiler html/less html/css styles.less --run-once",
+    "start": "npm run watch"
+  }
+}
