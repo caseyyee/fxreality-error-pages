@@ -90,34 +90,6 @@ button:active {
   color: white;
   border-color: black;
 }
-fieldset {
-  display: flex;
-  border: none;
-  margin: 35px 0px;
-  white-space: nowrap;
-}
-fieldset input[type='text'] {
-  border: 2px solid #434c58;
-  border-radius: 10px;
-  flex: 2;
-  padding: 0 30px;
-  height: 80px;
-  background: #8c898a;
-  border-color: #8c898a;
-  color: white;
-}
-fieldset input[type='text']:hover {
-  background: #e3e4e5;
-  border-color: #e3e4e5;
-}
-fieldset input[type='text']:focus {
-  background-color: #3d3d3d;
-  border-color: #3d3d3d;
-  color: white;
-}
-fieldset button {
-  margin-left: 1em;
-}
 [data-type="danger"] {
   background: url('../images/icon-errorpage-thisconnectionisuntrusted.svg');
   background-repeat: repeat-x;
@@ -155,6 +127,33 @@ fieldset button {
 .select button {
   min-width: 250px;
   margin: 0px 20px;
+}
+.address-field {
+  display: flex;
+  margin: 35px 0px;
+}
+.address-field input[type='text'] {
+  border: 2px solid #434c58;
+  border-radius: 10px;
+  flex: 2;
+  padding: 0 30px;
+  height: 80px;
+  background: #8c898a;
+  border-color: #8c898a;
+  color: white;
+}
+.address-field input[type='text']:hover {
+  background: #e3e4e5;
+  border-color: #e3e4e5;
+}
+.address-field input[type='text']:focus {
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
+  color: white;
+}
+.address-field button {
+  flex: 1;
+  margin-left: 1em;
 }
 .arrow {
   list-style: none;

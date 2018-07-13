@@ -88,37 +88,6 @@ button:active {
     border-color: black;
 }
 
-fieldset {
-    display: flex;
-    border: none;
-    margin: 35px 0px;
-    white-space: nowrap;
-
-    input[type='text'] {
-        .rounded();
-        flex: 2;
-        padding: 0 30px;
-        height: @input-height;
-        background: @rhino;
-        border-color: @rhino;
-        color: white;
-    }
-    
-    input[type='text']:hover {
-        background: @silver;
-        border-color: @silver;
-    }
-    
-    input[type='text']:focus {
-        background-color: @asphalt;
-        border-color: @asphalt;
-        color: white;
-    }
-    button {
-        margin-left: 1em;
-    }
-}
-
 [data-type="danger"] {
     background: url('../images/icon-errorpage-thisconnectionisuntrusted.svg');
     background-repeat: repeat-x;
@@ -159,6 +128,37 @@ fieldset {
     button {
         min-width: 250px;
         margin: 0px 20px;
+    }
+}
+
+.address-field {
+    display: flex;
+    margin: 35px 0px;
+
+    input[type='text'] {
+        .rounded();
+        flex: 2;
+        padding: 0 30px;
+        height: @input-height;
+        background: @rhino;
+        border-color: @rhino;
+        color: white;
+    }
+
+    input[type='text']:hover {
+        background: @silver;
+        border-color: @silver;
+    }
+
+    input[type='text']:focus {
+        background-color: @asphalt;
+        border-color: @asphalt;
+        color: white;
+    }
+
+    button {
+        flex: 1;
+        margin-left: 1em;
     }
 }
 
